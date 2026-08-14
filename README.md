@@ -1,7 +1,6 @@
 # Legal GraphRAG
 
-PDF ingestion (OCR-aware, table-aware) → vector store (Chroma) + graph store (Neo4j) →
-hybrid retrieval → human-approved answers. Built for legal contract review.
+Legal GraphRAG project, a sophisticated system designed for automated legal contract review using a combination of vector and graph-based retrieval. The architecture utilizes OCR-aware PDF ingestion to populate a hybrid database consisting of Chroma for semantic search and Neo4j for relationship mapping. At its core, a LangGraph-driven pipeline coordinates specialized agents that classify queries, audit evidence, and synthesize structured answers while maintaining human-in-the-loop approval checkpoints. To ensure high reliability, the system includes an evaluation harness using the CUAD benchmark and RAGAS metrics to assess answer **faithfulness** and **Answer Correctness**. Furthermore, a FastAPI backend and web console facilitate real-time interaction, allowing users to upload documents and track the model's reasoning through transparent LangSmith tracing. This comprehensive framework emphasizes traceable evidence, deterministic confidence levels, and rigorous performance monitoring for complex legal analysis.
 
 ## Project structure
 
