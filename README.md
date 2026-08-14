@@ -70,9 +70,16 @@ legal_graphrag/
 
 ---
 
-Safety Layer,Implementation Strategy,Risk Mitigated
-Grounding,LLM constrained to answer solely using retrieved vector/graph context.,Hallucinations & unverified statements measured using metrics like faithfulness ->"Is every claim in the answer backed by the context provided?"  
-Execution Safety,Static analysis & validation of generated Cypher prior to database execution.,"Unauthorized writes, data deletion, or injection"
+## 🛡️ Security & Safety
+
+For legal and enterprise systems, accuracy and database integrity are non-negotiable. The system incorporates two core safety layers to prevent hallucinations and database corruption:
+
+| Safety Layer | Implementation Strategy | Risk Mitigated |
+| :--- | :--- | :--- |
+| **Grounding** | LLM constrained to answer solely using retrieved vector/graph context. | **Hallucinations & unverified statements**<br><sub>Evaluated using metrics like Faithfulness: *"Is every claim in the answer backed by the context provided?"*</sub> |
+| **Execution Safety** | Static analysis & validation of generated Cypher queries prior to database execution. | **Unauthorized writes, data deletion, or injection**<br><sub>Ensures all generated database operations are strictly read-only.</sub> |
+
+
 
 ## 🤖 Main Pipeline: Router + Specialist Agents + Auditor + Synthesizer
 
