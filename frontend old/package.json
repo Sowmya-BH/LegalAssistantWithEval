@@ -1,0 +1,13 @@
+{
+  "name": "legal-graphrag-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript frontend for the legal_graphrag FastAPI backend (api/main.py).",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

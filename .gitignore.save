@@ -1,0 +1,25 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg
+
+# Data (generated at runtime — keep the folders, not their contents)
+data/uploads/*
+!data/uploads/.gitkeep
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+data/metadata/*
+!data/metadata/.gitkeep
+
+# OS / editor
+.DS_Store
+.Rhistory
+.env
