@@ -1,14 +1,9 @@
-In a GitHub `README.md`, technology choices belong in a dedicated **`Tech Stack`** (or **`Technologies Used`**) section. It should be placed high up in the document—typically right after the **Project Overview** and before structural breakdowns or setup instructions—so developers and recruiters can instantly evaluate the project's architecture.
-
-Here is your complete, ready-to-use `README.md` file for GitHub, cleanly formatted with the **Tech Stack** table integrated in the correct position:
 
 ```markdown
 # Legal GraphRAG
 
-Legal GraphRAG is a system designed for automated legal contract review using a combination of vector- and graph-based retrieval. The architecture utilizes OCR-aware PDF ingestion to populate a hybrid database consisting of Chroma for semantic search and Neo4j for relationship mapping. 
-
+Legal GraphRAG is a system designed for automated legal contract review using a combination of vector- and graph-based retrieval that converts unstructured legal contracts like PDFs into a searchable structured knowledge base. The architecture utilizes OCR-aware PDF ingestion to populate a hybrid database consisting of Chroma for semantic search and Neo4j for relationship mapping.
 At its core, a LangGraph-driven pipeline coordinates specialized agents that classify queries, audit evidence, and synthesize structured answers while maintaining human-in-the-loop approval checkpoints. The framework emphasizes traceable evidence, deterministic confidence levels, and performance monitoring for complex legal analysis.
-
 ---
 
 ## 🛠️ Tech Stack
