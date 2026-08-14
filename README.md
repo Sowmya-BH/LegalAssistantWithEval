@@ -70,6 +70,10 @@ legal_graphrag/
 
 ---
 
+Safety Layer,Implementation Strategy,Risk Mitigated
+Grounding,LLM constrained to answer solely using retrieved vector/graph context.,Hallucinations & unverified statements measured using metrics like faithfulness ->"Is every claim in the answer backed by the context provided?"  
+Execution Safety,Static analysis & validation of generated Cypher prior to database execution.,"Unauthorized writes, data deletion, or injection"
+
 ## 🤖 Main Pipeline: Router + Specialist Agents + Auditor + Synthesizer
 
 `src/legal_graphrag/agents/legal_pipeline.py` is the primary query-answering entrypoint. A **Router** classifies questions into `hybrid`, `graph`, or `direct`, dispatches them to matching specialist agents (`HybridSearchAgent` or `GraphRAGAgent`), passes the results through an **Auditor** with a human evidence checkpoint, and sends them to a **Synthesizer** with a second human approval checkpoint.
