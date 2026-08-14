@@ -106,7 +106,10 @@ print(render_full_answer(result))
 ## 📋 Answer Output Format
 
 Every approved answer produces a **structured card** containing a direct answer, relevant evidence, a confidence score (High/Medium/Low), and document attributions.
+<img width="3024" height="1964" alt="317B1C5F-1856-4331-8EC4-C6BC7F0F7918" src="https://github.com/user-attachments/assets/097c2908-9bec-46c4-835e-eabebb2d8140" />
+
 <img width="3024" height="1964" alt="1ACC4DB0-974C-4E67-91B4-8073C401945B" src="https://github.com/user-attachments/assets/daee557f-211b-4bd8-b6c6-46237920df65" />
+
 
 ```
 
