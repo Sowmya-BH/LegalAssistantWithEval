@@ -6,7 +6,7 @@ by this app — it only imports and calls existing public functions, same as
 scripts/run_demo.py.
 
 Run:
-    uvicorn legal_graphrag.api.main:app --reload --app-dir src
+    
 
 Then open http://127.0.0.1:8000/
 """
