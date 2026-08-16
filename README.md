@@ -31,7 +31,7 @@ Deployment & Containerization: Docker containerized for deployment on serverless
 
 | Component | Technology | Description |
 | :--- | :--- | :--- |
-| **API & Server** | FastAPI, Uvicorn | High-performance, asynchronous REST API endpoints served via Uvicorn ASGI server. |
+|**API & Server**| FastAPI, Uvicorn | High-performance, asynchronous REST API endpoints served via Uvicorn ASGI server. |
 | **Data Validation** | Pydantic | Strict request/response data validation, type enforcement, and schema management. |
 | **Agentic Workflow** | LangGraph | Stateful multi-node agent orchestration, conditional routing, and Human-in-the-Loop (HITL) review loops. |
 | **Document & OCR** | pdfplumber, Tesseract OCR, pdf2image | Native text/table extraction with Tesseract OCR fallback for scanned, low-text pages. |
