@@ -41,6 +41,7 @@ Deployment & Containerization: Docker containerized for deployment on serverless
 | **Knowledge Graph** | Neo4j | Graph database for traversing structural relationships between clauses, entities, and risk categories. |
 | **Evaluation** | RAGAS | Framework for assessing context recall, answer correctness, and absence-detection accuracy. |
 | **Containerization** | Docker | Containerized packaging for seamless deployment on serverless platforms such as Google Cloud Run. |
+
 ---
 
 ## 🏗️ Project Structure
